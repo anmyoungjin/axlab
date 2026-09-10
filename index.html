@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>경북 AX랩 · AX 인사이트 톡 세미나 | 세미나 소개</title>
+  <meta name="description" content="2026 AX 인사이트 톡 세미나 - 생성형 AI와 제조의 만남: 엔비디아 Omniverse 기반 최적화. 9월 11일(목) 19:00, 포항테크노파크 제5벤처동. 무료 참석, 사전 신청." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+  <!-- ================= GNB / NAVIGATION (공통) ================= -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100 transition-shadow">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 md:h-20 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white font-extrabold text-sm">AX</span>
+          <span class="text-[15px] md:text-base font-bold text-ink">
+            경북 AX랩 <span class="text-slate-300 font-normal">|</span> <span class="text-brand-600">AX 인사이트 톡</span>
+          </span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-slate-600">
+          <a href="index.html" data-nav class="hover:text-brand-600 transition-colors">세미나 소개</a>
+          <a href="speaker.html" data-nav class="hover:text-brand-600 transition-colors">연사 소개</a>
+          <a href="schedule.html" data-nav class="hover:text-brand-600 transition-colors">일정 안내</a>
+          <a href="location.html" data-nav class="hover:text-brand-600 transition-colors">오시는 길</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="#" id="remote-support"
+            class="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-medium text-slate-600 hover:border-brand-600 hover:text-brand-600 transition-colors">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            원격 지원
+          </a>
+          <a href="apply.html"
+            class="inline-flex items-center gap-1.5 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700 transition-colors">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            사전 신청
+          </a>
+          <button id="menu-toggle" aria-label="메뉴" aria-expanded="false"
+            class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-600">
+            <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-100 bg-white">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 py-3 flex flex-col text-[15px] font-medium">
+        <a href="index.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">세미나 소개</a>
+        <a href="speaker.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">연사 소개</a>
+        <a href="schedule.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">일정 안내</a>
+        <a href="location.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">오시는 길</a>
+        <a href="apply.html" class="mt-1 rounded-lg bg-brand-600 px-3 py-3 text-center font-semibold text-white">사전 신청하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-16 md:pt-20">
+
+    <!-- ================= HERO ================= -->
+    <section class="bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+        <div class="grid gap-6 lg:grid-cols-3">
+
+          <!-- 좌측 2/3 : 라이트 블루 그래픽 카드 -->
+          <div class="lg:col-span-2 card-hero-left bg-brand-50 shadow-soft overflow-hidden reveal">
+            <div class="relative h-full p-8 sm:p-12 lg:p-14">
+              <div class="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-brand-100/70"></div>
+              <div class="pointer-events-none absolute right-10 bottom-8 h-24 w-24 rounded-full bg-white/60"></div>
+
+              <div class="relative">
+                <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs md:text-sm font-semibold text-brand-600 shadow-soft">
+                  <span class="h-1.5 w-1.5 rounded-full bg-brand-600"></span>
+                  2026 AX 인사이트 톡 세미나
+                </span>
+
+                <h1 class="mt-6 text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold leading-[1.25] text-ink">
+                  생성형 AI와 제조의 만남<span class="text-brand-600">:</span><br />
+                  엔비디아 <span class="text-brand-600">Omniverse</span> 기반 최적화
+                </h1>
+
+                <p class="mt-4 max-w-xl text-slate-600 md:text-lg">
+                  제조 · 물류 운영의 디지털 트윈 최적화 전략을 현장 사례 중심으로 풀어드립니다.
+                </p>
+
+                <div class="mt-8 inline-flex flex-col sm:flex-row items-stretch sm:items-center gap-px overflow-hidden rounded-2xl bg-white shadow-soft text-sm md:text-[15px] font-medium">
+                  <span class="flex items-center gap-2 px-5 py-3.5"><span>📅</span> 9월 11일(목) 19:00 ~ 20:30</span>
+                  <span class="hidden sm:block w-px self-stretch bg-slate-100"></span>
+                  <span class="flex items-center gap-2 px-5 py-3.5 border-t sm:border-t-0 border-slate-100"><span>📍</span> 포항테크노파크 제5벤처동</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 우측 1/3 : 흰색 빠른 신청 패널 -->
+          <div class="card-hero-right bg-white shadow-soft-lg border border-slate-100 p-7 sm:p-8 flex flex-col reveal">
+            <div class="flex items-center gap-2.5">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 text-white">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.9 9.9 0 01-4-.8L3 20l1.3-3.9A7.7 7.7 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              </span>
+              <div>
+                <p class="font-bold text-ink">세미나 빠른 신청</p>
+                <p class="text-xs text-slate-500">Quick Registration</p>
+              </div>
+            </div>
+
+            <div class="speech-bubble mt-5 p-4 text-sm text-slate-700 leading-relaxed">
+              안녕하세요! 😊<br />
+              좌석이 한정되어 있어요.<br />
+              <b class="text-ink">세미나 사전 신청 후 참석</b>해 주세요.
+            </div>
+
+            <ul class="mt-5 space-y-2 text-sm text-slate-600">
+              <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 참가비 전액 무료</li>
+              <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 현장 Q&A · 네트워킹 포함</li>
+              <li class="flex items-center gap-2"><svg class="h-4 w-4 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 신청 즉시 접수 확인</li>
+            </ul>
+
+            <a href="apply.html"
+              class="mt-6 lg:mt-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-6 py-4 text-base font-bold text-white hover:bg-brand-700 transition-colors">
+              사전 신청하기
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ============ QUICK SERVICE ============ -->
+        <div class="mt-6 lg:mt-8 rounded-4xl bg-white shadow-soft border border-slate-100 p-6 sm:p-8 reveal">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
+            <div class="qs-item flex flex-col items-center text-center gap-3">
+              <span class="qs-icon"><svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+              <span class="text-sm font-semibold text-ink">AI 제조 혁신</span>
+            </div>
+            <div class="qs-item flex flex-col items-center text-center gap-3">
+              <span class="qs-icon"><svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg></span>
+              <span class="text-sm font-semibold text-ink">NVIDIA Omniverse</span>
+            </div>
+            <div class="qs-item flex flex-col items-center text-center gap-3">
+              <span class="qs-icon"><svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.9 9.9 0 01-4-.8L3 20l1.3-3.9A7.7 7.7 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></span>
+              <span class="text-sm font-semibold text-ink">현장 Q&A</span>
+            </div>
+            <div class="qs-item flex flex-col items-center text-center gap-3">
+              <span class="qs-icon"><svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg></span>
+              <span class="text-sm font-semibold text-ink">무료 참석 혜택</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 세미나 개요 / 특징 ================= -->
+    <section id="about" class="page-section">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl reveal">
+          <span class="text-sm font-bold tracking-wide text-brand-600">ABOUT</span>
+          <h2 class="mt-2 text-2xl md:text-4xl font-extrabold text-ink">이번 세미나에서 얻어가실 것</h2>
+          <p class="mt-3 text-slate-600 md:text-lg">
+            제조업의 AI 전환(AX)은 더 이상 미래의 이야기가 아닙니다. 현장에 바로 적용 가능한 전략과 실제 사례를 중심으로 진행됩니다.
+          </p>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="reveal shadow-soft-hover rounded-4xl bg-white shadow-soft border border-slate-100 p-8">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-ink">제조업 AI 전환(AX) 트렌드</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">생성형 AI가 바꾸는 제조 현장의 패러다임과 국내외 도입 흐름을 한눈에 정리합니다.</p>
+          </article>
+          <article class="reveal shadow-soft-hover rounded-4xl bg-white shadow-soft border border-slate-100 p-8">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-ink">NVIDIA Omniverse 최적화 사례</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">디지털 트윈 기반 시뮬레이션으로 제조 · 물류 운영을 최적화한 실제 적용 사례를 살펴봅니다.</p>
+          </article>
+          <article class="reveal shadow-soft-hover rounded-4xl bg-white shadow-soft border border-slate-100 p-8">
+            <div class="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-50 text-brand-600">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 100-8 4 4 0 000 8zm7-4a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-ink">전문가 Q&A 및 네트워킹</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">연사와의 직접 Q&A, 그리고 지역 제조 · AI 생태계 관계자들과의 네트워킹 시간을 제공합니다.</p>
+          </article>
+        </div>
+
+        <!-- 세미나 개요 표 -->
+        <div class="mt-10 overflow-hidden rounded-4xl bg-white shadow-soft border border-slate-100 reveal">
+          <dl class="divide-y divide-slate-100 text-sm md:text-[15px]">
+            <div class="flex gap-4 px-6 py-4"><dt class="w-24 shrink-0 font-bold text-ink">세미나명</dt><dd class="text-slate-600">2026 AX 인사이트 톡 세미나 — 생성형 AI와 제조의 만남</dd></div>
+            <div class="flex gap-4 px-6 py-4"><dt class="w-24 shrink-0 font-bold text-ink">일시</dt><dd class="text-slate-600">2026년 9월 11일(목) 19:00 ~ 20:30</dd></div>
+            <div class="flex gap-4 px-6 py-4"><dt class="w-24 shrink-0 font-bold text-ink">장소</dt><dd class="text-slate-600">포항테크노파크 제5벤처동</dd></div>
+            <div class="flex gap-4 px-6 py-4"><dt class="w-24 shrink-0 font-bold text-ink">대상</dt><dd class="text-slate-600">제조 · 물류 · AI 분야 종사자, 관심 있는 일반인 누구나</dd></div>
+            <div class="flex gap-4 px-6 py-4"><dt class="w-24 shrink-0 font-bold text-ink">참가비</dt><dd class="text-slate-600">무료 (사전 신청 필수)</dd></div>
+            <div class="flex gap-4 px-6 py-4"><dt class="w-24 shrink-0 font-bold text-ink">주최/주관</dt><dd class="text-slate-600">경상북도 / 경북 AX랩 · 포항테크노파크</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 하단 CTA ================= -->
+    <section class="pb-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="card-accent-bl bg-brand-600 px-8 py-12 md:px-14 md:py-14 text-center reveal">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-white">좌석이 한정되어 있습니다. 지금 신청하세요.</h2>
+          <p class="mt-3 text-brand-50">사전 신청자에 한해 입장이 가능하며, 조기 마감될 수 있습니다.</p>
+          <a href="apply.html" class="mt-7 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-base font-bold text-brand-600 hover:bg-brand-50 transition-colors">
+            사전 신청하기
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (공통) ================= -->
+  <footer class="bg-white border-t border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white font-extrabold text-xs">AX</span>
+            <span class="font-bold text-ink">경북 AX랩 | AX 인사이트 톡</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-500">생성형 AI와 제조의 만남 : 2026 AX 인사이트 톡 세미나</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-bold text-ink">주최 / 주관</p>
+          <p class="mt-2 text-slate-500">주최 : 경상북도</p>
+          <p class="text-slate-500">주관 : 경북 AX랩 · 포항테크노파크</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-bold text-ink">문의처</p>
+          <p class="mt-2 text-slate-500">경북 AX랩 사무국</p>
+          <p class="text-slate-500">이메일 : ax-lab@example.com</p>
+          <p class="text-slate-500">전화 : 054-000-0000 (평일 09:00~18:00)</p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-100 pt-6 text-xs text-slate-400">
+        © 2026 경북 AX랩. All rights reserved. · 본 페이지는 세미나 홍보 및 사전 신청 접수를 위한 페이지입니다.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

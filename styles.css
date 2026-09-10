@@ -1,0 +1,166 @@
+/* =========================================================
+   경북 AX랩 · AX 인사이트 톡 세미나 (Multi-Page)
+   KOREATECH 능력개발교육원 UI 벤치마킹 — 공통 스타일
+   Tailwind CDN 유틸리티로 처리하지 못하는 부분만 정의
+   ========================================================= */
+
+:root {
+  --brand: #1e66f5;          /* 코발트 블루 (메인/포인트) */
+  --brand-strong: #1a56d6;   /* 호버용 진한 블루 */
+  --brand-050: #ebf3ff;      /* 라이트 블루 배경 */
+  --ink: #1e293b;            /* 슬레이트 블랙 (본문 텍스트) */
+  --muted: #64748b;          /* 미디엄 그레이 (보조 텍스트) */
+  --surface: #f8fafc;        /* 옅은 회색 바탕 */
+  --line: #e2e8f0;           /* 구분선 */
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;      /* 고정 GNB 높이만큼 앵커 보정 */
+}
+
+body {
+  background: #ffffff;
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+section[id] { scroll-margin-top: 88px; }
+
+/* =========================================================
+   1) 라운딩 유틸 (border-radius 32px 이상 — KOREATECH 시그니처)
+   ========================================================= */
+.rounded-4xl { border-radius: 32px; }
+.rounded-5xl { border-radius: 40px; }
+
+/* 우측 상단 / 좌측 하단에 큰 라운딩 */
+.card-hero-left  { border-radius: 40px; border-bottom-left-radius: 120px; }
+.card-hero-right { border-radius: 40px; border-top-right-radius: 96px; }
+.card-accent-tr  { border-radius: 32px; border-top-right-radius: 72px; }
+.card-accent-bl  { border-radius: 32px; border-bottom-left-radius: 72px; }
+
+/* =========================================================
+   2) 은은한 포커스 드롭 섀도우
+   ========================================================= */
+.shadow-soft    { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); }
+.shadow-soft-lg { box-shadow: 0 20px 45px rgba(30, 102, 245, 0.12); }
+.shadow-soft-hover { transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.shadow-soft-hover:hover {
+  box-shadow: 0 18px 40px rgba(30, 102, 245, 0.15);
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   3) 서브 페이지 공통 헤더 밴드
+   ========================================================= */
+.subpage-hero {
+  background: var(--brand-050);
+  border-radius: 0 0 48px 48px;
+}
+.subpage-hero .eyebrow {
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--brand);
+}
+
+/* 페이지 본문 섹션 기본 여백 */
+.page-section { padding-top: 4rem; padding-bottom: 4rem; }
+@media (min-width: 768px) {
+  .page-section { padding-top: 5.5rem; padding-bottom: 5.5rem; }
+}
+
+/* =========================================================
+   4) 자주찾는 서비스 원형 아이콘
+   ========================================================= */
+.qs-icon {
+  width: 68px; height: 68px;
+  border-radius: 9999px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--brand-050);
+  color: var(--brand);
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.qs-item:hover .qs-icon {
+  background: var(--brand);
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   5) 말풍선 (빠른 신청 패널)
+   ========================================================= */
+.speech-bubble {
+  position: relative;
+  background: var(--brand-050);
+  border-radius: 18px 18px 18px 4px;
+}
+
+/* =========================================================
+   6) 타임라인 UI (일정 안내 페이지)
+   ========================================================= */
+.timeline {
+  position: relative;
+  margin-left: 0.5rem;
+  padding-left: 2rem;
+  border-left: 2px solid var(--line);
+}
+.timeline-item { position: relative; padding-bottom: 2rem; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute;
+  left: calc(-2rem - 11px);
+  top: 4px;
+  width: 20px; height: 20px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 4px solid var(--brand);
+}
+.timeline-item.is-highlight .timeline-dot {
+  background: var(--brand);
+  box-shadow: 0 0 0 6px rgba(30, 102, 245, 0.15);
+}
+
+/* =========================================================
+   7) 폼 필드
+   ========================================================= */
+.form-field {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  border-radius: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.form-field:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px rgba(30, 102, 245, 0.12);
+}
+select.form-field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%231e66f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  padding-right: 2.75rem;
+}
+
+/* =========================================================
+   8) 스크롤 등장 애니메이션
+   ========================================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* =========================================================
+   9) 접근성: 모션 최소화 존중
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}

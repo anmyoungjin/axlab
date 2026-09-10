@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>경북 AX랩 · AX 인사이트 톡 세미나 | 연사 소개</title>
+  <meta name="description" content="연사 소개 - 손서희 대표 (前 엔비디아 Developer Program Marketing Manager). 강연 주제: 생성형 AI와 제조의 만남: 엔비디아 Omniverse 기반 최적화." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+  <!-- ================= GNB / NAVIGATION (공통) ================= -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100 transition-shadow">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 md:h-20 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white font-extrabold text-sm">AX</span>
+          <span class="text-[15px] md:text-base font-bold text-ink">
+            경북 AX랩 <span class="text-slate-300 font-normal">|</span> <span class="text-brand-600">AX 인사이트 톡</span>
+          </span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-slate-600">
+          <a href="index.html" data-nav class="hover:text-brand-600 transition-colors">세미나 소개</a>
+          <a href="speaker.html" data-nav class="hover:text-brand-600 transition-colors">연사 소개</a>
+          <a href="schedule.html" data-nav class="hover:text-brand-600 transition-colors">일정 안내</a>
+          <a href="location.html" data-nav class="hover:text-brand-600 transition-colors">오시는 길</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="#" id="remote-support"
+            class="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-medium text-slate-600 hover:border-brand-600 hover:text-brand-600 transition-colors">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            원격 지원
+          </a>
+          <a href="apply.html"
+            class="inline-flex items-center gap-1.5 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700 transition-colors">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            사전 신청
+          </a>
+          <button id="menu-toggle" aria-label="메뉴" aria-expanded="false"
+            class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-600">
+            <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-100 bg-white">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 py-3 flex flex-col text-[15px] font-medium">
+        <a href="index.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">세미나 소개</a>
+        <a href="speaker.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">연사 소개</a>
+        <a href="schedule.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">일정 안내</a>
+        <a href="location.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">오시는 길</a>
+        <a href="apply.html" class="mt-1 rounded-lg bg-brand-600 px-3 py-3 text-center font-semibold text-white">사전 신청하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-16 md:pt-20">
+
+    <!-- ================= 서브 페이지 헤더 밴드 ================= -->
+    <section class="subpage-hero">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        <span class="eyebrow">SPEAKER</span>
+        <h1 class="mt-2 text-3xl md:text-5xl font-extrabold text-ink">연사 소개</h1>
+        <p class="mt-3 text-slate-600 md:text-lg">엔비디아 개발자 생태계 마케팅을 총괄한 전문가가 직접 강연합니다.</p>
+      </div>
+    </section>
+
+    <!-- ================= 연사 프로필 상세 ================= -->
+    <section class="page-section">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-3">
+
+          <!-- 프로필 카드 -->
+          <div class="card-accent-tr bg-white shadow-soft border border-slate-100 p-8 reveal">
+            <div class="relative mx-auto h-36 w-36 rounded-3xl bg-brand-600 flex items-center justify-center text-5xl font-extrabold text-white">
+              손
+              <span class="absolute -bottom-2 -right-2 rounded-lg bg-ink px-2 py-0.5 text-[10px] font-bold text-white">NVIDIA</span>
+            </div>
+            <h2 class="mt-6 text-center text-2xl font-extrabold text-ink">손서희 <span class="text-lg font-medium text-slate-500">대표</span></h2>
+            <p class="mt-1 text-center text-sm font-semibold text-brand-600">前 엔비디아(NVIDIA)<br />Developer Program Marketing Manager</p>
+
+            <div class="mt-6 space-y-2 text-sm">
+              <div class="flex justify-between rounded-xl bg-slate-50 px-4 py-3"><span class="text-slate-500">전문 분야</span><span class="font-semibold text-ink">AI · 제조 DX</span></div>
+              <div class="flex justify-between rounded-xl bg-slate-50 px-4 py-3"><span class="text-slate-500">강연 주제</span><span class="font-semibold text-ink">Omniverse 최적화</span></div>
+              <div class="flex justify-between rounded-xl bg-slate-50 px-4 py-3"><span class="text-slate-500">강연 시간</span><span class="font-semibold text-ink">70분 (19:00~20:10)</span></div>
+            </div>
+          </div>
+
+          <!-- 이력 & 소개 -->
+          <div class="lg:col-span-2 space-y-6">
+            <div class="card-accent-bl bg-white shadow-soft border border-slate-100 p-8 reveal">
+              <h3 class="text-lg font-bold text-ink">주요 이력</h3>
+              <ul class="mt-4 space-y-3 text-sm md:text-[15px] text-slate-600">
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  前 엔비디아(NVIDIA) Developer Program Marketing Manager — 개발자 생태계 및 AI 기술 마케팅 전략 총괄
+                </li>
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  생성형 AI · Omniverse 기반 제조 · 물류 산업 적용 프로젝트 다수 자문
+                </li>
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  국내외 테크 컨퍼런스 · 기업 대상 AI 전환(AX) 강연 및 워크숍 진행
+                </li>
+                <li class="flex gap-3">
+                  <svg class="mt-0.5 h-5 w-5 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                  현재 AI 컨설팅 기업 대표로서 제조 현장 디지털 트윈 도입 자문
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-4xl bg-white shadow-soft border border-slate-100 p-8 reveal">
+              <h3 class="text-lg font-bold text-ink">연사 한마디</h3>
+              <blockquote class="mt-3 border-l-4 border-brand-600 pl-4 text-slate-600 md:text-[15px] leading-relaxed">
+                "생성형 AI는 제조 현장의 '보이지 않던 비효율'을 데이터로 드러냅니다. 이번 세미나에서는 거창한 이론이 아니라,
+                오늘 당장 공장과 물류 라인에 적용해볼 수 있는 현실적인 첫걸음을 함께 그려보겠습니다."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= 강연 주제 상세 ================= -->
+        <div class="mt-14 reveal">
+          <div class="card-hero-left bg-brand-50 shadow-soft p-8 sm:p-12">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs md:text-sm font-semibold text-brand-600 shadow-soft">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-600"></span> KEYNOTE
+            </span>
+            <h2 class="mt-5 text-2xl md:text-4xl font-extrabold leading-snug text-ink">
+              생성형 AI와 제조의 만남<span class="text-brand-600">:</span><br />
+              엔비디아 Omniverse 기반 최적화
+            </h2>
+            <p class="mt-4 max-w-3xl text-slate-600 md:text-lg">
+              제조 · 물류 운영의 핵심 지표를 개선하기 위한 디지털 트윈 · 시뮬레이션 전략을 실제 사례와 함께 다룹니다.
+            </p>
+          </div>
+
+          <div class="mt-6 grid gap-6 md:grid-cols-2">
+            <div class="rounded-4xl bg-white shadow-soft border border-slate-100 p-8">
+              <h3 class="font-bold text-ink">강연에서 다루는 내용</h3>
+              <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+                <li class="flex gap-2.5"><span class="text-brand-600 font-bold">01</span> 제조업 AI 전환(AX)의 현재와 국내외 도입 흐름</li>
+                <li class="flex gap-2.5"><span class="text-brand-600 font-bold">02</span> NVIDIA Omniverse 개념과 디지털 트윈 아키텍처</li>
+                <li class="flex gap-2.5"><span class="text-brand-600 font-bold">03</span> 공정 · 물류 시뮬레이션으로 병목을 찾는 방법</li>
+                <li class="flex gap-2.5"><span class="text-brand-600 font-bold">04</span> 생성형 AI를 접목한 운영 최적화 실제 사례</li>
+                <li class="flex gap-2.5"><span class="text-brand-600 font-bold">05</span> 소규모 조직이 시작할 수 있는 도입 로드맵</li>
+              </ul>
+            </div>
+            <div class="rounded-4xl bg-white shadow-soft border border-slate-100 p-8">
+              <h3 class="font-bold text-ink">이런 분께 추천합니다</h3>
+              <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+                <li class="flex gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 제조 · 물류 현장의 생산성 개선을 고민하는 실무자</li>
+                <li class="flex gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> AI · 디지털 트윈 도입을 검토 중인 기획 · 경영진</li>
+                <li class="flex gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 생성형 AI의 산업 적용 사례가 궁금한 개발자 · 연구자</li>
+                <li class="flex gap-2.5"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> 경북 지역 제조 · AI 생태계에 관심 있는 누구나</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-14 text-center reveal">
+          <a href="apply.html" class="inline-flex items-center gap-2 rounded-2xl bg-brand-600 px-8 py-4 text-base font-bold text-white hover:bg-brand-700 transition-colors">
+            이 강연, 사전 신청하기
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (공통) ================= -->
+  <footer class="bg-white border-t border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white font-extrabold text-xs">AX</span>
+            <span class="font-bold text-ink">경북 AX랩 | AX 인사이트 톡</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-500">생성형 AI와 제조의 만남 : 2026 AX 인사이트 톡 세미나</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-bold text-ink">주최 / 주관</p>
+          <p class="mt-2 text-slate-500">주최 : 경상북도</p>
+          <p class="text-slate-500">주관 : 경북 AX랩 · 포항테크노파크</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-bold text-ink">문의처</p>
+          <p class="mt-2 text-slate-500">경북 AX랩 사무국</p>
+          <p class="text-slate-500">이메일 : ax-lab@example.com</p>
+          <p class="text-slate-500">전화 : 054-000-0000 (평일 09:00~18:00)</p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-100 pt-6 text-xs text-slate-400">
+        © 2026 경북 AX랩. All rights reserved. · 본 페이지는 세미나 홍보 및 사전 신청 접수를 위한 페이지입니다.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

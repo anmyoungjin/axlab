@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>경북 AX랩 · AX 인사이트 톡 세미나 | 사전 신청</title>
+  <meta name="description" content="사전 신청 - 2026 AX 인사이트 톡 세미나. 성명, 연락처, 이메일, 소속, 연령대, 종사 분야를 입력하고 참석을 신청하세요." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+  <!-- ================= GNB / NAVIGATION (공통) ================= -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100 transition-shadow">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 md:h-20 items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2.5">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white font-extrabold text-sm">AX</span>
+          <span class="text-[15px] md:text-base font-bold text-ink">
+            경북 AX랩 <span class="text-slate-300 font-normal">|</span> <span class="text-brand-600">AX 인사이트 톡</span>
+          </span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-slate-600">
+          <a href="index.html" data-nav class="hover:text-brand-600 transition-colors">세미나 소개</a>
+          <a href="speaker.html" data-nav class="hover:text-brand-600 transition-colors">연사 소개</a>
+          <a href="schedule.html" data-nav class="hover:text-brand-600 transition-colors">일정 안내</a>
+          <a href="location.html" data-nav class="hover:text-brand-600 transition-colors">오시는 길</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <a href="#" id="remote-support"
+            class="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-slate-200 px-3.5 py-2 text-sm font-medium text-slate-600 hover:border-brand-600 hover:text-brand-600 transition-colors">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            원격 지원
+          </a>
+          <a href="apply.html"
+            class="inline-flex items-center gap-1.5 rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700 transition-colors">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            사전 신청
+          </a>
+          <button id="menu-toggle" aria-label="메뉴" aria-expanded="false"
+            class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-600">
+            <svg id="icon-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg id="icon-close" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-100 bg-white">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 py-3 flex flex-col text-[15px] font-medium">
+        <a href="index.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">세미나 소개</a>
+        <a href="speaker.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">연사 소개</a>
+        <a href="schedule.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">일정 안내</a>
+        <a href="location.html" data-nav class="rounded-lg px-3 py-3 text-slate-700 hover:bg-brand-50">오시는 길</a>
+        <a href="apply.html" class="mt-1 rounded-lg bg-brand-600 px-3 py-3 text-center font-semibold text-white">사전 신청하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-16 md:pt-20">
+
+    <!-- ================= 서브 페이지 헤더 밴드 ================= -->
+    <section class="subpage-hero">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        <span class="eyebrow">REGISTRATION</span>
+        <h1 class="mt-2 text-3xl md:text-5xl font-extrabold text-ink">사전 신청</h1>
+        <p class="mt-3 text-slate-600 md:text-lg">아래 정보를 입력하시면 신청이 접수됩니다. <span class="text-brand-600 font-semibold">*</span> 표시는 필수 항목입니다.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-3">
+
+          <!-- 신청 폼 -->
+          <form id="apply-form" novalidate class="lg:col-span-2 card-accent-bl bg-white shadow-soft border border-slate-100 p-6 sm:p-9 space-y-6 reveal">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-ink mb-2">성명 <span class="text-brand-600">*</span></label>
+                <input type="text" id="name" name="name" required autocomplete="name" class="form-field w-full px-4 py-3 text-sm" placeholder="홍길동" />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-semibold text-ink mb-2">연락처 <span class="text-brand-600">*</span></label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" inputmode="tel" class="form-field w-full px-4 py-3 text-sm" placeholder="010-1234-5678" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-ink mb-2">이메일 <span class="text-brand-600">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" class="form-field w-full px-4 py-3 text-sm" placeholder="name@example.com" />
+              </div>
+              <div>
+                <label for="affiliation" class="block text-sm font-semibold text-ink mb-2">소속 <span class="text-brand-600">*</span></label>
+                <input type="text" id="affiliation" name="affiliation" required autocomplete="organization" class="form-field w-full px-4 py-3 text-sm" placeholder="기업 / 기관 / 대학 / 개인" />
+              </div>
+              <div>
+                <label for="age" class="block text-sm font-semibold text-ink mb-2">연령대</label>
+                <select id="age" name="age" class="form-field w-full px-4 py-3 text-sm text-slate-700">
+                  <option value="" disabled selected>선택해 주세요</option>
+                  <option>20대</option>
+                  <option>30대</option>
+                  <option>40대</option>
+                  <option>50대</option>
+                  <option>60대 이상</option>
+                </select>
+              </div>
+              <div>
+                <label for="field" class="block text-sm font-semibold text-ink mb-2">종사 분야</label>
+                <select id="field" name="field" class="form-field w-full px-4 py-3 text-sm text-slate-700">
+                  <option value="" disabled selected>선택해 주세요</option>
+                  <option>제조 / 생산</option>
+                  <option>물류 / SCM</option>
+                  <option>IT / SW 개발</option>
+                  <option>AI / 데이터</option>
+                  <option>기획 / 경영</option>
+                  <option>연구 / 학계</option>
+                  <option>학생</option>
+                  <option>기타</option>
+                </select>
+              </div>
+            </div>
+
+            <label class="flex items-start gap-3 rounded-2xl bg-slate-50 p-4 cursor-pointer">
+              <input type="checkbox" id="privacy" name="privacy" required class="mt-0.5 h-5 w-5 shrink-0 rounded border-slate-300 text-brand-600 focus:ring-brand-600" />
+              <span class="text-sm text-slate-600">
+                <span class="font-semibold text-ink">[필수]</span> 개인정보 수집 및 이용에 동의합니다. <span class="text-brand-600">*</span>
+                <span class="mt-1 block text-xs text-slate-400">
+                  수집항목: 성명, 연락처, 이메일, 소속 등 · 목적: 세미나 신청 접수 및 안내 · 보유기간: 행사 종료 후 6개월. 동의를 거부할 수 있으나, 거부 시 신청이 제한됩니다.
+                </span>
+              </span>
+            </label>
+
+            <p id="form-error" class="hidden text-sm font-medium text-red-500"></p>
+
+            <button type="submit" class="w-full rounded-2xl bg-brand-600 px-6 py-4 text-base font-bold text-white hover:bg-brand-700 transition-colors">
+              신청 완료하기
+            </button>
+            <p class="text-center text-xs text-slate-400">제출 시 “신청이 완료되었습니다” 안내 후 메인 페이지로 이동합니다.</p>
+          </form>
+
+          <!-- 세미나 요약 -->
+          <aside class="space-y-4 reveal">
+            <div class="card-accent-tr bg-brand-50 shadow-soft p-7">
+              <p class="text-sm font-semibold text-brand-600">2026 AX 인사이트 톡 세미나</p>
+              <h2 class="mt-2 text-lg font-extrabold leading-snug text-ink">생성형 AI와 제조의 만남: 엔비디아 Omniverse 기반 최적화</h2>
+            </div>
+            <div class="rounded-3xl bg-white shadow-soft border border-slate-100 p-7 space-y-3 text-sm">
+              <div class="flex gap-3"><span>📅</span><span class="text-slate-600">9월 11일(목) 19:00 ~ 20:30</span></div>
+              <div class="flex gap-3"><span>📍</span><span class="text-slate-600">포항테크노파크 제5벤처동</span></div>
+              <div class="flex gap-3"><span>🎤</span><span class="text-slate-600">손서희 대표 (前 엔비디아 Developer Program Marketing Manager)</span></div>
+              <div class="flex gap-3"><span>💸</span><span class="text-slate-600">참가비 무료 · 사전 신청 필수</span></div>
+            </div>
+            <div class="rounded-3xl bg-white shadow-soft border border-slate-100 p-7 text-sm">
+              <p class="font-bold text-ink">신청 전 확인하세요</p>
+              <ul class="mt-3 space-y-2 text-slate-600">
+                <li class="flex gap-2"><span class="text-brand-600">·</span> 좌석이 한정되어 조기 마감될 수 있습니다.</li>
+                <li class="flex gap-2"><span class="text-brand-600">·</span> 접수 결과는 입력하신 이메일로 안내됩니다.</li>
+                <li class="flex gap-2"><span class="text-brand-600">·</span> 문의: 054-000-0000 (평일 09:00~18:00)</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (공통) ================= -->
+  <footer class="bg-white border-t border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid gap-8 md:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white font-extrabold text-xs">AX</span>
+            <span class="font-bold text-ink">경북 AX랩 | AX 인사이트 톡</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-500">생성형 AI와 제조의 만남 : 2026 AX 인사이트 톡 세미나</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-bold text-ink">주최 / 주관</p>
+          <p class="mt-2 text-slate-500">주최 : 경상북도</p>
+          <p class="text-slate-500">주관 : 경북 AX랩 · 포항테크노파크</p>
+        </div>
+        <div class="text-sm">
+          <p class="font-bold text-ink">문의처</p>
+          <p class="mt-2 text-slate-500">경북 AX랩 사무국</p>
+          <p class="text-slate-500">이메일 : ax-lab@example.com</p>
+          <p class="text-slate-500">전화 : 054-000-0000 (평일 09:00~18:00)</p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-slate-100 pt-6 text-xs text-slate-400">
+        © 2026 경북 AX랩. All rights reserved. · 본 페이지는 세미나 홍보 및 사전 신청 접수를 위한 페이지입니다.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
